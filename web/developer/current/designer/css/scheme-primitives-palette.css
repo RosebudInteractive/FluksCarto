@@ -1,0 +1,128 @@
+.tool-panel {
+  border-right: solid 1px #8b8d8d;
+  position: relative;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.tool-panel:last-child {
+  border-right: none;
+}
+.tool-panel .tool-panel-control {
+  float: left;
+  position: relative;
+  width: auto;
+  height: 2em;
+  vertical-align: middle;
+}
+.tool-panel .tool-panel-control input,
+.tool-panel .tool-panel-control select {
+  margin-top: 0.375em;
+  margin-right: 0.25em;
+}
+.tool-panel .tool-panel-control div.ms-parent {
+  margin-top: 3px;
+}
+.tool-panel .tool-panel-control .label {
+  font-size: 0.875em;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  margin-top: 0.5em;
+}
+.tool-panel .tool-panel-control input.color-picker {
+  width: 4em;
+}
+.icon {
+  float: left;
+  position: relative;
+  width: 2em;
+  height: 2em;
+}
+.icon > div {
+  width: 32px;
+  height: 32px;
+  line-height: 24px;
+  background-size: 24px;
+  background-position: 3px 3px;
+  background-repeat: no-repeat;
+}
+.icon > div:hover {
+/*background-color #babcbc*/
+  opacity: 0.5;
+}
+.icon .url-dialog {
+  position: absolute;
+  float: left;
+  top: 0;
+  z-index: 2;
+}
+.icon .url-dialog div {
+  display: flex;
+  position: fixed;
+  padding: 10px;
+  background-color: #a9a9a9;
+}
+.icon.active div {
+  background-color: #babcbc;
+}
+.primitives-palette {
+  background-color: #eaecec;
+  height: 2em;
+}
+.icon.pointer > div {
+  background-image: url("./img/Cursor.png");
+}
+.icon.polygon > div {
+  background-image: url("./img/polygon.png");
+}
+.icon.line > div {
+  background-image: url("./img/Line.png");
+}
+.icon.text > div {
+  background-image: url("./img/Text.png");
+}
+.icon.left > div {
+  background-image: url("./img/Left.png");
+}
+.icon.center > div {
+  background-image: url("./img/Center.png");
+}
+.icon.right > div {
+  background-image: url("./img/Right.png");
+}
+.icon.bold > div {
+  background-image: url("./img/Bold.png");
+}
+.icon.italic > div {
+  background-image: url("./img/Italic.png");
+}
+.icon.underline > div {
+  background-image: url("./img/Underline.png");
+}
+.icon.zoom-in > div {
+  background-image: url("./img/ZoomIn.png");
+}
+.icon.zoom-out > div {
+  background-image: url("./img/ZoomOut.png");
+}
+.icon.delete > div {
+  background-image: url("./img/Delete.png");
+}
+.icon.show-equipments > div {
+  background-image: url("./img/Robot-24.png");
+}
+.icon.show-sector > div {
+  background-image: url("./img/polygon.png");
+}
+.icon.show-graphic > div {
+  background-image: url("./img/Line.png");
+}
+.icon.background-url > div {
+  background-image: url("./img/Domain-24.png");
+}
+.icon.pressed {
+  background-color: #babcbc;
+}
+.icon.disabled {
+  opacity: 0.3;
+}

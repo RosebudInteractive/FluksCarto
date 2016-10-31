@@ -1,0 +1,210 @@
+svg text {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+svg text:selection {
+  background: none;
+}
+.scheme-container {
+  box-sizing: border-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  overflow: auto;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  width: 100%;
+  height: 100%;
+}
+.scheme-container div {
+  box-sizing: border-box;
+}
+.tool-box {
+  background-color: #f6f6f6;
+  width: 15em;
+  height: 100%;
+  flex: none;
+}
+.tool-box .palette-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tool-panel {
+  border-right: solid 1px #8b8d8d;
+  position: relative;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.tool-panel:last-child {
+  border-right: none;
+}
+.tool-panel .tool-panel-control {
+  float: left;
+  position: relative;
+  width: auto;
+  height: 2em;
+  vertical-align: middle;
+}
+.tool-panel .tool-panel-control input,
+.tool-panel .tool-panel-control select {
+  margin-top: 0.375em;
+  margin-right: 0.25em;
+}
+.tool-panel .tool-panel-control div.ms-parent {
+  margin-top: 3px;
+}
+.tool-panel .tool-panel-control .label {
+  font-size: 0.875em;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  margin-top: 0.5em;
+}
+.main-content {
+  background-color: #fff;
+  flex: 1 0 auto;
+  position: relative;
+  overflow: scroll;
+}
+.main-content svg {
+  position: absolute;
+}
+.primitives-palette {
+  background-color: #eaecec;
+  height: 2em;
+  flex: none;
+}
+.right-content {
+  flex: 100 0 auto;
+  -webkit-flex: 100 0 auto;
+  -ms-flex: 100 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.palette-tree {
+  overflow: auto;
+  flex: 1 0 auto;
+  min-height: 0;
+  min-width: 0;
+  position: relative;
+}
+.palette-tree div {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.jstree-anchor {
+  font-size: 0.9em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.jstree-anchor:hover {
+  background-color: #fff;
+}
+.jstree-node.used-node > a.jstree-anchor {
+  color: #a6a6a6;
+}
+.palette-header {
+  height: 2em;
+  flex: none;
+}
+.palette-header .palette-header-control {
+  padding: 0.25em;
+  float: right;
+  position: relative;
+}
+g.equipment rect.data,
+g.sector rect.data,
+g.text rect.data {
+  stroke-width: 1px;
+  opacity: 0.5;
+}
+g.equipment rect.data:hover,
+g.sector rect.data:hover,
+g.text rect.data:hover {
+  stroke-width: 5px;
+}
+g.equipment .invisible-rect,
+g.sector .invisible-rect,
+g.text .invisible-rect {
+  stroke: transparent;
+  fill: transparent;
+}
+g.equipment rect.data.hover,
+g.sector rect.data.hover,
+g.text rect.data.hover {
+  stroke-width: 5px;
+}
+g.equipment rect.data.focused,
+g.sector rect.data.focused,
+g.text rect.data.focused {
+  stroke-width: 5px;
+}
+g.equipment rect.image-border,
+g.sector rect.image-border,
+g.text rect.image-border {
+  fill: transparent;
+  stroke-width: 1px;
+  stroke: #060;
+}
+g.equipment image,
+g.sector image,
+g.text image {
+  opacity: 0.5;
+}
+g.equipment .status,
+g.sector .status,
+g.text .status {
+  opacity: 0.5;
+}
+g.equipment .status,
+g.sector .status,
+g.text .status {
+  fill: transparent;
+}
+g.equipment .status.active,
+g.sector .status.active,
+g.text .status.active {
+  fill: #008000;
+}
+g.equipment .status.passive,
+g.sector .status.passive,
+g.text .status.passive {
+  fill: #f00;
+}
+g.polygon {
+  stroke-width: 1px;
+  opacity: 0.5;
+}
+g.polygon:hover {
+  stroke-width: 5px;
+}
+.focused {
+  stroke-width: 5px;
+}
+.drop-target {
+  stroke-width: 5px;
+}
+g.line .line-border.visible {
+  stroke: #f00;
+}
+g.line .line-border.focused {
+  stroke: #f00;
+}
+g.line .line-border {
+  stroke: transparent;
+}
+g.line .foreground {
+  stroke: transparent;
+}
+g.line .line-border.hover {
+  stroke: #f00;
+}

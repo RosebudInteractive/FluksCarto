@@ -1,0 +1,45 @@
+g.equipment, g.sector, g.text
+  rect.data
+    stroke-width 1px
+    opacity 0.5
+    &:hover
+      stroke-width 5px
+  .invisible-rect
+    stroke transparent
+    fill transparent
+  rect.data.hover
+    stroke-width 5px
+  rect.data.focused
+    stroke-width 5px
+  rect.image-border
+    fill: transparent
+    stroke-width 1px
+    stroke #006600
+  image
+    opacity 0.5
+  .status
+    opacity 0.5
+  .status.active
+    fill green
+  .status.passive
+    fill red
+g.polygon
+  stroke-width 1px
+  opacity 0.5
+  &:hover
+    stroke-width 5px
+.focused
+  stroke-width 5px
+.drop-target
+  stroke-width 5px
+g.line
+  .line-border.visible
+    stroke #ff0000
+  .line-border.focused
+    stroke #ff0000
+  .line-border
+    stroke transparent
+  .foreground
+    stroke transparent
+  .line-border.hover
+    stroke #ff0000

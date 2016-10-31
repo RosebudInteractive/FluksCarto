@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../../scripts/lib/jquery-ui/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../../scripts/lib/jstree/themes/default/style.css" media="all">
+    <link href="../../scripts/lib/multiSelect/multiple-select.css" rel="stylesheet">
+    <link href="designer/css/scheme.css" rel="stylesheet">
+    <link href="css/example.css" rel="stylesheet">
+    <link href="../../scripts/lib/colorpicker/css/colorpicker.css" rel="stylesheet">
+
+    <script src="../../scripts/lib/jquery-1.11.2.js"></script>
+    <script src="../../scripts/lib/jquery-ui/jquery-ui.js"></script>
+    <script src="../../scripts/lib/jstree/jstree.js"></script>
+    <script src="../../scripts/lib/multiSelect/multiple-select.js"></script>
+    <script src="../../scripts/lib/class-extend.js"></script>
+    <script src="../../scripts/lib/snap/snap.svg.js"></script>
+    <script src="../../scripts/lib/snap/snap.svg.zpd.js"></script>
+    <script src="../../scripts/lib/require.js"></script>
+    <script src="../../scripts/lib/hammer.js"></script>
+    <script src="../../scripts/lib/colorpicker/colorpicker.js"></script>
+    <script src="../../scripts/lib/detector.js"></script>
+    <script src="../../scripts/lib/svg_todataurl.js"></script>
+    <script src="../../scripts/lib/canvg.js"></script>
+
+    <script src="designer/scheme-data.js"></script>
+    <script src="designer-synoptic/synoptic-view.js"></script>
+    <script src="designer/scheme-palette.js"></script>
+    <script src="designer-synoptic/equipment-view.js"></script>
+    <script src="designer-synoptic/sector-view.js"></script>
+    <script src="designer-synoptic/primitive-views.js"></script>
+    <script src="designer/scheme-primitive-palette.js"></script>
+    <script src="designer-synoptic/subviews.js"></script>
+
+    <script src="main.js"></script>
+    <script src="scripts/example1.js"></script>
+    <script src="scripts/example2.js"></script>
+    <script src="scripts/example3.js"></script>
+    <script src="scripts/example4.js"></script>
+    <script src="scripts/example5.js"></script>
+
+</head>
+<body>
+<div class="demo-container">
+    <div id="widget-container" class="external-container">
+    </div>
+    <div class="demo-pane-container">
+        <div>
+            <input id="import-btn" type="button" value="import"/>
+            <input id="export-btn" type="button" value="export"/>
+            <select id="select-example">
+                <option value="ex1">Example 1</option>
+                <option value="ex2">Example 2</option>
+                <option value="ex3" selected>Example 3</option>
+                <option value="ex4">Example 4</option>
+                <option value="ex5">Example 5</option>
+            </select>
+        </div>
+        <div>
+            <textarea id="example-text" style="height: 200px; width: 100%;"></textarea>
+        </div>
+        <div>
+            <h5>Equipment</h5>
+            <input id="equipment-id" type="text"/>
+            <input id="equipment-data-btn" type="button" value="Set data"/>
+        </div>
+        <div>
+            <textarea id="equipment-data-text" style="height: 100px; width: 100%;"></textarea>
+        </div>
+        <div>
+            <h5>Sector</h5>
+            <input id="sector-id" type="text"/>
+            <input id="sector-data-btn" type="button" value="Set data"/>
+        </div>
+        <div>
+            <textarea id="sector-data-text" style="height: 100px; width: 100%;"></textarea>
+        </div>
+        <div>
+            <h5>Properties</h5>
+            <div>
+                <input id="design-mode" type="checkbox" checked="true" style="display: inline"/>
+                <div style="display: inline">Design mode</div>
+            </div>
+            <div>
+                <input id="save-png-browser" type="button" value="Download PNG"/>
+                <input id="save-png-callback" type="button" value="Save PNG to memory"/>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

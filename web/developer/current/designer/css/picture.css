@@ -1,0 +1,82 @@
+g.equipment rect.data,
+g.sector rect.data,
+g.text rect.data {
+  stroke-width: 1px;
+  opacity: 0.5;
+}
+g.equipment rect.data:hover,
+g.sector rect.data:hover,
+g.text rect.data:hover {
+  stroke-width: 5px;
+}
+g.equipment .invisible-rect,
+g.sector .invisible-rect,
+g.text .invisible-rect {
+  stroke: transparent;
+  fill: transparent;
+}
+g.equipment rect.data.hover,
+g.sector rect.data.hover,
+g.text rect.data.hover {
+  stroke-width: 5px;
+}
+g.equipment rect.data.focused,
+g.sector rect.data.focused,
+g.text rect.data.focused {
+  stroke-width: 5px;
+}
+g.equipment rect.image-border,
+g.sector rect.image-border,
+g.text rect.image-border {
+  fill: transparent;
+  stroke-width: 1px;
+  stroke: #060;
+}
+g.equipment image,
+g.sector image,
+g.text image {
+  opacity: 0.5;
+}
+g.equipment .status,
+g.sector .status,
+g.text .status {
+  opacity: 0.5;
+}
+g.equipment .status.active,
+g.sector .status.active,
+g.text .status.active {
+  fill: #008000;
+}
+g.equipment .status.passive,
+g.sector .status.passive,
+g.text .status.passive {
+  fill: #f00;
+}
+g.polygon {
+  stroke-width: 1px;
+  opacity: 0.5;
+}
+g.polygon:hover {
+  stroke-width: 5px;
+}
+.focused {
+  stroke-width: 5px;
+}
+.drop-target {
+  stroke-width: 5px;
+}
+g.line .line-border.visible {
+  stroke: #f00;
+}
+g.line .line-border.focused {
+  stroke: #f00;
+}
+g.line .line-border {
+  stroke: transparent;
+}
+g.line .foreground {
+  stroke: transparent;
+}
+g.line .line-border.hover {
+  stroke: #f00;
+}
